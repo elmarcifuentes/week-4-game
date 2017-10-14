@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Week 4 Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Title & Instructions -->
+    <div class=container>
+        <div class="jumbotron">
+            <h1 class="text-center">Week 4 Game</h1>
+            <h3>Instructions:</h3>
+            <ul>
+                <li>
+                    You will be given a random number at the start of the game.
+                </li>
+                <li>
+                    There are four crystals below. By clicking a crystal you will add a specific amount of points to your total score.
+                </li>
+                <li>
+                    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                </li>
+                <li>
+                    The value of each crystal is hidden from you until you click on it.
+                </li>
+                <li>
+                    Each time when the game starts, the game will change the value of each crystal.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Guess and Random Number -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item justify-content-between">
+                            Random Number
+                            <span class="badge badge-default badge-pill" id="random">0</span>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            Total Score
+                            <span class="badge badge-default badge-pill" id="score">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item justify-content-between">
+                            Wins
+                            <span class="badge badge-default badge-pill" id="wins">0</span>
+                        </li>
+                        <li class="list-group-item justify-content-between">
+                            Losses
+                            <span class="badge badge-default badge-pill" id="losses">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Crystal Buttons -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-default">
+                        <img src="assets/images/red.png" alt="" height="50" width="50">
+                    </button>
+                    <button class="btn btn-default">
+                        <img src="assets/images/blue.png" alt="" height="50" width="50">
+                    </button>
+                    <button class="btn btn-default">
+                        <img src="assets/images/yellow.png" alt="" height="50" width="50">
+                    </button>
+                    <button class="btn btn-default">
+                        <img src="assets/images/green.png" alt="" height="50" width="50">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
